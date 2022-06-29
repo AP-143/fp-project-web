@@ -37,9 +37,93 @@
       </h2>
   </center>  
 </div>
+<!-- Bagian teman Akbar -->
 <div class="space"></div>    
 <div class="container">
   <div class="space"></div> 
+  <div class="row" style="padding-right: 80px; padding-left: 80px;">
+    <h2 style="padding-bottom: 10px;">Select plann</h2>
+    <div class="column">
+      <div class="card">
+        <h3>Free plann</h3>
+        <p>Some text</p>
+        <div class="space-text-button"></div>
+        <button class="button" id="modalbutton">Plan</button>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <h3>Subscription plann</h3>
+        <p>Some text</p>
+        <div class="space-text-button"></div>
+        <button class="button">Plan</button>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <h3>Vip plann</h3>
+        <p>Some text</p>
+        <div class="space-text-button"></div>
+        <button class="button">Plan</button>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <h3>Vip+ plann</h3>
+        <p>Some text</p>
+        <div class="space-text-button"></div>
+        <button class="button">Plan</button>
+      </div>
+    </div>
+  </div>
+  <div class="space"></div>
+  <!-- Modal payment -->
+  <div id="modalpayment" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p><i class="fa fa-cart-arrow-down"></i> Select your payment
+       <br><br>
+       Supported payment <i class="	fa fa-cc-visa"></i> <i class="fa fa-paypal"></i> <i class="fa fa-credit-card"></i> <i class="fa fa-cc-mastercard"></i>
+      </p>
+      <br>
+      <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+        <p>Please select your payment</p>
+        <br>
+        <input type="radio" id="visa" name="payment" value="visa">
+        <label for="visa"><i class="	fa fa-cc-visa"></i> visa</label>
+        <input type="radio" id="paypal" name="payment" value="paypal">
+        <label for="paypal"><i class="fa fa-paypal"></i> paypal</label>
+        <input type="radio" id="creditcard" name="payment" value="creditcard">
+        <label for="creditcard"><i class="fa fa-credit-card"></i> credit card</label>
+        <input type="radio" id="mastertcard" name="payment" value="mastertcard">
+        <label for="mastertcard"><i class="fa fa-cc-mastercard"></i> mastert card</label>
+        <br><br>
+        <label for="lname">ID card</label>
+        <input type="text" id="lname" name="ID" placeholder="XXX-XXX-XXX">
+        <br><br>  
+        <p>Please select your plann</p>
+        <br>
+        <div class="dropdown">
+          <button class="button">Plann</button>
+          <div class="dropdown-content">
+            <input type="radio" id="subsplan" name="plan" value="subsplan">
+            <label for="subsplan">Subscription plann</label><br>
+            <input type="radio" id="Vipplann" name="plan" value="Vipplann">
+            <label for="Vipplann">Vip plann</label><br>
+            <input type="radio" id="vipplus" name="plan" value="vipplus">
+            <label for="vipplus">Vip+ plann</label>
+          </div>
+        </div>
+        <p style="text-align: right;"><strong>Total : Rp. XXX-XXX-XXX</strong></p> 
+      </form>
+    </div>
+  </div>
+  <!-- END bagian teman Akbar -->
   <h2 style="padding-bottom: 10px; padding-left: 80px;">Movie List</h2>
     <ul class="card-wrapper">
       <li class="card-film">
@@ -168,6 +252,7 @@
     }
   }
 
+  // Slider js 
   let slideIndex = 0;
   showSlides();
 
@@ -186,6 +271,34 @@
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+
+  // Modal js 
+
+  // Get the modal
+  var modal = document.getElementById("modalpayment");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("modalbutton");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
   }
 </script>
 </html>
