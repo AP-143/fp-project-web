@@ -87,18 +87,18 @@
       <br>
       <form>
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="fname" name="fname" required>
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lname">
+        <input type="text" id="lname" name="lname" required>
         <p>Please select your payment</p>
         <br>
-        <input type="radio" id="visa" name="payment" value="visa">
+        <input type="radio" id="visa" name="payment" value="visa" required>
         <label for="visa"><i class="	fa fa-cc-visa"></i> visa</label>
-        <input type="radio" id="paypal" name="payment" value="paypal">
+        <input type="radio" id="paypal" name="payment" value="paypal" required>
         <label for="paypal"><i class="fa fa-paypal"></i> paypal</label>
-        <input type="radio" id="creditcard" name="payment" value="creditcard">
+        <input type="radio" id="creditcard" name="payment" value="creditcard" required>
         <label for="creditcard"><i class="fa fa-credit-card"></i> credit card</label>
-        <input type="radio" id="mastertcard" name="payment" value="mastertcard">
+        <input type="radio" id="mastertcard" name="payment" value="mastertcard" required>
         <label for="mastertcard"><i class="fa fa-cc-mastercard"></i> mastert card</label>
         <br><br>
         <label for="lname">ID card</label>
@@ -109,16 +109,19 @@
         <div class="dropdown">
           <button class="button">Plann</button>
           <div class="dropdown-content">
-            <input type="radio" id="subsplan" name="plan" value="subsplan">
+            <input type="radio" id="subsplan" name="plan" value="subsplan" required>
             <label for="subsplan">Subscription plann</label><br>
-            <input type="radio" id="Vipplann" name="plan" value="Vipplann">
+            <input type="radio" id="Vipplann" name="plan" value="Vipplann" required>
             <label for="Vipplann">Vip plann</label><br>
-            <input type="radio" id="vipplus" name="plan" value="vipplus">
+            <input type="radio" id="vipplus" name="plan" value="vipplus" required>
             <label for="vipplus">Vip+ plann</label>
           </div>
         </div>
         <p style="text-align: right;"><strong>Total : Rp. XXX-XXX-XXX</strong></p> 
       </form>
+      <br>
+      <button type="submit" value="Submit" style="float: right; background-color: #4CAF50; font-size: 26px;"><a href="#" style="color:white">Buy</a></button>
+      <br><br>
     </div>
   </div>
   <!-- END bagian teman Akbar -->
