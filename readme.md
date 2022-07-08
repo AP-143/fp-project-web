@@ -1,6 +1,6 @@
 ## Change layout and full redesign
 
-## Bagian akbar dan teman 
+## akbar poenya
 
 > Sudah di kasih tanda (komentar) pada setiap kode
 > 
@@ -10,7 +10,7 @@
 
 ## Bahan yang digunakan dan dipelajari 
 
-> Jika dosen tanya silahkan bisa berikan tautan ini dan pelajari
+> referensi
 >
 > #Auto A 
 
