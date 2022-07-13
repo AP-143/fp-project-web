@@ -2,17 +2,17 @@
 
 ## akbar poenya
 
-> Sudah di kasih tanda (komentar) pada setiap kode
+> Sudah di kasih tanda (komentar) pada setiap kode biar gk bingung karena dua jd satu
 > 
-> Silahkan cek bagian file style1.css dan index.html
+> cek bagian file style1.css dan index.html
 > 
 > Kenapa dijadikan 1? Karena supaya irit file dan tidak membuang banyak disk resouce 
 
-## Bahan yang digunakan dan dipelajari 
+## referensi
 
-> referensi
+> 
 >
-> #Auto A 
+> #Auto A ++++++++++++++++++
 
 Resource : 
 
